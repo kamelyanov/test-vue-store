@@ -27,6 +27,7 @@ export default {
     box-shadow: var(--cards-shadow);
     border-radius: var(--cards-border-radius);
     position: relative;
+    cursor: pointer;
   }
 
   .card__image{
@@ -71,6 +72,7 @@ export default {
   }
 
   .card__delete{
+    opacity: 0;
     position: absolute;
     background: transparent;
     border: none;
@@ -83,7 +85,7 @@ export default {
     top: -8px;
     right: -8px;
     border-radius: 10px;
-    transition: all 0.1s;
+    transition: all 0.2s;
   }
 
   .card__delete:hover {
@@ -91,4 +93,7 @@ export default {
     width: 35px;
   }
 
+  .card:hover .card__delete {
+    opacity: 1;
+  }
 </style>

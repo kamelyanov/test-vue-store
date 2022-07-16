@@ -35,9 +35,8 @@
       >
       Добавить товар
       </button>
-
+      
     </form>
-
 
   </div>
 </template>
@@ -77,5 +76,14 @@ export default {
 </script>
 
 <style>
-
+  .form {
+    padding: 24px;
+    width: 332px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--cards-background);
+    box-shadow: var(--cards-shadow);
+    border-radius: var(--cards-border-radius);
+  }
 </style>

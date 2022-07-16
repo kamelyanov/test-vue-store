@@ -16,3 +16,15 @@
     }
   }
 </script>
+
+<style>
+  .main{
+    background-color: var(--page-background);
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    min-height: 100%;
+    max-width: 1440px;
+    margin: 0 auto 0;
+  }
+</style>

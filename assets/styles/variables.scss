@@ -1,7 +1,16 @@
 :root {
+  --page-background: #FFFEFB;
+
   --cards-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
   --cards-border-radius: 4px;
   --cards-background: #FFFEFB;
 
   --cards-text-color: #3F3F3F;
+
+  --inputs-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  --inputs-shadow-hover: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  --inputs-border-radius: 4px;
+  --inputs-background: #FFFEFB;
+  --inputs-color-name: #49485E;
+  --inputs-color-ph: #B4B4B4;
 }
