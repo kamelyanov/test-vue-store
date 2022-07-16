@@ -17,5 +17,11 @@ export default {
 
   css: [
     '@/assets/styles/styles.scss',
-  ]
+  ],
+  modules: ['@nuxtjs/google-fonts'],
+  googleFonts: {
+    families: {
+      'Source+Sans+Pro': [400, 600],
+    },
+  },
 }

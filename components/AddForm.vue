@@ -6,7 +6,7 @@
         inputName='Наименование товара'
         placeholder="Введите наименование товара"
         name="name"
-        required="true"
+        required="required"
       />
 
       <FormInput
@@ -19,17 +19,17 @@
         inputName='Ссылка на изображение товара'
         placeholder="Введите ссылку"
         name="image"
-        required="true"
+        required="required"
       />
 
       <FormInput
         inputName='Цена товара'
         placeholder="Введите цену"
         name="price"
-        required="true"
+        required="required"
       />
-      
-      <button 
+
+      <button
         class="button__confirm"
         type="submit"
       >
@@ -39,7 +39,7 @@
     </form>
 
 
-  </div>  
+  </div>
 </template>
 
 <script>
