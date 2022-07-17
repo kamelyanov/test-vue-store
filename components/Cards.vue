@@ -9,41 +9,12 @@
       </select>
     </div>
     <div class="cards">
-      <Card
-        image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
-        name="Название товара"
-        about="Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк"
-        price="10 000 руб."
-      />
-      <Card
-        image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
-        name="Название товара"
-        about="Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк"
-        price="10 000 руб."
-      />
-      <Card
-        image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
-        name="Название товара"
-        about="Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк"
-        price="10 000 руб."
-      />
-      <Card
-        image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
-        name="Название товара"
-        about="Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк"
-        price="10 000 руб."
-      />
-      <Card
-        image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
-        name="Название товара"
-        about="Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк"
-        price="10 000 руб."
-      />
-      <Card
-        image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
-        name="Название товара"
-        about="Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк"
-        price="10 000 руб."
+      <Card v-for="initialCard in initialCards" 
+        :key = initialCard.id
+        :image = initialCard.image
+        :name = initialCard.name
+        :about = initialCard.about
+        :price = initialCard.price
       />
     </div>
   </section>
@@ -51,11 +22,19 @@
 
 <script>
 import Card from "./Card";
+import initialCards from "../utils/initialCards.js"
+
 export default {
   props: ["card"],
   components: {
     Card,
   },
+  data() {
+    console.log(initialCards)
+    return {
+      initialCards
+    }
+  }
 };
 </script>
 
