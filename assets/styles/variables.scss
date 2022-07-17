@@ -1,4 +1,5 @@
 :root {
+  --white: #fff;
   --page-background: #FFFEFB;
 
   --cards-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
@@ -13,4 +14,8 @@
   --inputs-background: #FFFEFB;
   --inputs-color-name: #49485E;
   --inputs-color-ph: #B4B4B4;
+
+  --btn-cf-background: #7BAE73;
+  --btn-cf-bs: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  --btn-cf-br: 10px;
 }

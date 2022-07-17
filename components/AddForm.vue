@@ -6,7 +6,7 @@
         inputName='Наименование товара'
         placeholder="Введите наименование товара"
         name="name"
-        required="required"
+        required
       />
 
       <FormInput
@@ -19,23 +19,18 @@
         inputName='Ссылка на изображение товара'
         placeholder="Введите ссылку"
         name="image"
-        required="required"
+        required
       />
 
       <FormInput
         inputName='Цена товара'
         placeholder="Введите цену"
         name="price"
-        required="required"
+        required
       />
 
-      <button
-        class="button__confirm"
-        type="submit"
-      >
-      Добавить товар
-      </button>
-      
+      <ButtonConfirm/>
+
     </form>
 
   </div>
@@ -43,6 +38,7 @@
 
 <script>
 import FormInput from './FormInput'
+import ButtonConfirm from './ButtonConfirm.vue'
 
 function initialState() {
   return {
@@ -56,7 +52,7 @@ function initialState() {
 export default {
   data: initialState,
   components: {
-      FormInput
+      FormInput, ButtonConfirm
     },
   methods: {
      handleSubmit() {
@@ -76,6 +72,13 @@ export default {
 </script>
 
 <style>
+  .addForm__title {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
   .form {
     padding: 24px;
     width: 332px;

@@ -85,12 +85,15 @@ export default {
     top: -8px;
     right: -8px;
     border-radius: 10px;
-    transition: all 0.2s;
+    transition: 0.2s;
   }
 
   .card__delete:hover {
-    height: 35px;
-    width: 35px;
+    transform: scale(1.1)
+  }
+
+   .card__delete:active {
+    transform: scale(0.9)
   }
 
   .card:hover .card__delete {

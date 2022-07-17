@@ -5,7 +5,6 @@
       :placeholder="placeholder"
       type="text"
       :name="name"
-      :required="required"
     />
   </label>
 </template>
@@ -37,8 +36,8 @@ export default {
   }
 
   .input__value::placeholder{
-   font-weight: 400;
-   font-size: 12px;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 15px;
     color: var(--inputs-color-ph);
   }

@@ -1,6 +1,10 @@
 <template>
   <section class="container">
-    <div class="sort"></div>
+    <div class="sort">
+      <Select
+        
+      />
+    </div>
     <div class="cards">
       <Card
         image="https://mykitai.ru/wp-content/uploads/2019/03/Velikaya-Kitajskaya-stena-1.jpg"
