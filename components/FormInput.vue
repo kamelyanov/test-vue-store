@@ -6,13 +6,21 @@
       :placeholder="placeholder"
       type="text"
       :name="name"
+      v-if="!textarea"
+    />
+    <textarea
+      v-else
+      class="input__value input__value-about"
+      :placeholder="placeholder"
+      type="text"
+      :name="name"
     />
   </label>
 </template>
 
 <script>
 export default {
-  props: ['placeholder', 'name', 'inputName']
+ props: ['placeholder', 'name', 'inputName', 'about', 'about', 'textarea'],
 }
 </script>
 
@@ -33,6 +41,14 @@ export default {
       box-shadow: var(--inputs-shadow);
       color: var(--inputs-color-name);
       padding: 10px 16px;
+
+      &-about {
+        height: 108px;
+      }
+
+      &::placeholder {
+        position: absolute;
+      }
     }
 
     &__value::placeholder{
@@ -46,7 +62,5 @@ export default {
       border: 1px solid #555;
     }
   }
-
-
 
 </style>

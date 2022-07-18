@@ -6,24 +6,25 @@
         inputName='Наименование товара'
         placeholder="Введите наименование товара"
         name="name"
-        required
+        :required="true"
       />
       <FormInput
+        :textarea="true"
         inputName='Описание товара'
         placeholder="Введите описание товара"
         name="about"
-      />
+       />
       <FormInput
         inputName='Ссылка на изображение товара'
         placeholder="Введите ссылку"
         name="image"
-        required
+        :required="true"
       />
       <FormInput
         inputName='Цена товара'
         placeholder="Введите цену"
         name="price"
-        required
+        :required="true"
       />
       <ButtonConfirm/>
     </form>
@@ -42,7 +43,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .addForm__title {
     font-size: 28px;
     line-height: 36px;
