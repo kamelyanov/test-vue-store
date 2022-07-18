@@ -1,7 +1,9 @@
 <template>
-  <div class="main">
-    <AddForm/>
-    <Cards/>
+  <div class="root">
+    <div class="main">
+      <AddForm/>
+      <Cards/>
+    </div>
   </div>
 </template>
 
@@ -17,8 +19,12 @@
 </script>
 
 <style>
-  .main{
+  .root{
     background-color: var(--page-background);
+    height: 100vh;
+  }
+
+  .main{
     display: flex;
     flex-direction: row;
     gap: 16px;

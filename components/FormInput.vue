@@ -44,6 +44,7 @@ export default {
 
       &-about {
         height: 108px;
+        resize: none;
       }
 
       &::placeholder {
