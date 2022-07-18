@@ -10,7 +10,6 @@
   import Cards from '@/components/Cards.vue'
 
   export default {
-    name: 'App',
     components: {
       AddForm, Cards
     }
@@ -22,6 +21,7 @@
     background-color: var(--page-background);
     display: flex;
     flex-direction: row;
+    gap: 16px;
     padding: 32px;
     min-height: 100%;
     max-width: 1440px;

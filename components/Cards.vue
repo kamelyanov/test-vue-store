@@ -9,7 +9,7 @@
       </select>
     </div>
     <div class="cards">
-      <Card v-for="initialCard in initialCards" 
+      <Card v-for="initialCard in initialCards"
         :key = initialCard.id
         :image = initialCard.image
         :name = initialCard.name
@@ -21,13 +21,14 @@
 </template>
 
 <script>
+
 import Card from "./Card";
 import initialCards from "../utils/initialCards.js"
 
 export default {
   props: ["card"],
   components: {
-    Card,
+    Card
   },
   data() {
     console.log(initialCards)

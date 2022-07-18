@@ -1,7 +1,8 @@
 <template>
   <label class="input">
-    <p class="input__name"> {{ inputName }}</p>
-    <input class="input__value"
+    <p class="input__name">{{ inputName }}</p>
+    <input
+      class="input__value"
       :placeholder="placeholder"
       type="text"
       :name="name"
@@ -15,11 +16,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .input {
     display: flex;
     flex-direction: column;
     gap: 4px;
+
   }
 
   .input__name {
@@ -45,5 +47,7 @@ export default {
   .input__value:focus {
     border: 1px solid #555;
   }
+
+
 
 </style>
