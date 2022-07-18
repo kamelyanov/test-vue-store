@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .card {
     height: 423px;
     width: 332px;
@@ -28,18 +28,47 @@ export default {
     border-radius: var(--cards-border-radius);
     position: relative;
     cursor: pointer;
-  }
 
-  .card__image{
-    height: 200px;
-    width: 332px;
-    border-radius: var(--cards-border-radius) var(--cards-border-radius) 0 0;
-    object-fit: cover;
-  }
+    &__image{
+      height: 200px;
+      width: 332px;
+      border-radius: var(--cards-border-radius) var(--cards-border-radius) 0 0;
+      object-fit: cover;
+    }
 
-  .card__info{
-    padding: 16px 24px;
-    color: var(--cards-text-color);
+    &__info{
+      padding: 16px 24px;
+      color: var(--cards-text-color);
+    }
+
+    &__delete{
+      opacity: 0;
+      position: absolute;
+      background: transparent;
+      border: none;
+      background-image: url(@/assets/icons/delete-button.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      top: -8px;
+      right: -8px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    &__delete:hover {
+      transform: scale(1.1)
+    }
+
+    &__delete:active {
+      transform: scale(0.9)
+    }
+
+    &:hover .card__delete {
+      opacity: 1;
+    }
   }
 
   .info__name {
@@ -69,34 +98,5 @@ export default {
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-  }
-
-  .card__delete{
-    opacity: 0;
-    position: absolute;
-    background: transparent;
-    border: none;
-    background-image: url(@/assets/icons/delete-button.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 32px;
-    width: 32px;
-    cursor: pointer;
-    top: -8px;
-    right: -8px;
-    border-radius: 10px;
-    transition: 0.2s;
-  }
-
-  .card__delete:hover {
-    transform: scale(1.1)
-  }
-
-   .card__delete:active {
-    transform: scale(0.9)
-  }
-
-  .card:hover .card__delete {
-    opacity: 1;
   }
 </style>

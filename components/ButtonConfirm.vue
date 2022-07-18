@@ -2,7 +2,7 @@
   <button class="button__confirm" type="submit">Добавить товар</button>
 </template>
 
-<style>
+<style lang="scss">
   .button__confirm {
     width: 284px;
     height: 36px;
@@ -15,14 +15,14 @@
     box-shadow: var(--btn-cf-bs);
     cursor: pointer;
     transition: 300ms;
-  }
 
-  .button__confirm:hover {
+  &__confirm:hover {
     box-shadow: var(--inputs-shadow-hover);
   }
 
-   .button__confirm:active {
+   &__confirm:active {
     transform: scale(0.99);
   }
+}
 
 </style>

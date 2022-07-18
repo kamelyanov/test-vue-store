@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
   .container {
     display: flex;
     flex-direction: column;
@@ -54,21 +54,21 @@ export default {
 
   .sort {
     align-self: end;
-  }
 
-  .sort__select {
-    position: relative;
-    height: 36px;
-    padding: 10px 27px 10px 16px;
-    font-size: 12px;
-    line-height: 15px;
-    color: var(--inputs-color-ph);
-    border-radius: var(--cards-border-radius);
-    border: none;
-    box-shadow: var(--inputs-shadow-hover);
-    background: var(--cards-background) url(@/assets/icons/sort-arrow.svg) 90% center no-repeat;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    &__select {
+      position: relative;
+      height: 36px;
+      padding: 10px 27px 10px 16px;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--inputs-color-ph);
+      border-radius: var(--cards-border-radius);
+      border: none;
+      box-shadow: var(--inputs-shadow-hover);
+      background: var(--cards-background) url(@/assets/icons/sort-arrow.svg) 90% center no-repeat;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
   }
 </style>

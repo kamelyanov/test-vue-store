@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .addForm__title {
     font-size: 28px;
     line-height: 36px;
