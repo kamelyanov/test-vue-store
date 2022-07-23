@@ -6,7 +6,7 @@ $ npm install
 $ npm run dev
 Node v16.14.2
 
-<a href="https://www.figma.com/file/kIuVw6nSk218pi9iE98iq5/Junior-frontend-developer-test?node-id=0%3A1">Макет</a>
+[Макет](https://www.figma.com/file/kIuVw6nSk218pi9iE98iq5/Junior-frontend-developer-test?node-id=0%3A1 "Макет в фигме")
 
 Тестовое задание - главная страница магазина написана с использованием Vue фреймворка, собрано сборщиком Nuxt.js. 
 
